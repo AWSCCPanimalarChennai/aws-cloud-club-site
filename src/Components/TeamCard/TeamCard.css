@@ -1,0 +1,112 @@
+.team-card {
+    background-color: rgba(255, 255, 255, 0.12);
+    border: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box-shadow for elevation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    width: 100%;
+    min-height: 470px;
+}
+
+
+
+.team-card-title{
+    font-size: 28px;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(#F1F3F3, #7C5AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+}
+  
+.card-text{
+    color: #fff;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+
+
+.card-image{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 15px;
+}
+
+.team-card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.designation {
+    font-size: 18px;
+    color: #fff;
+}
+
+.quote {
+    font-size: 160px;
+    margin-top: -40px;
+    margin-bottom: -100px;
+  }
+  
+  .quote-text {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+
+.connect-btn {
+    margin-top: 20px;
+    background: rgb(51,0,102);
+    border: none;
+    background: linear-gradient(90deg, #3a0247, #410157);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.connect-btn:hover {
+    background: linear-gradient(#410157, #3a0247);
+}
+
+@media (max-width: 576px) {
+    .team-card {
+        padding: 15px;
+    }
+
+    .quote {
+        font-size: 180px;
+        margin-top: -40px;
+        margin-bottom: -120px;
+      }
+
+      .quote-text {
+        font-size: 22px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .team-card-title{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    
+  }

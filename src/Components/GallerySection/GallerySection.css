@@ -1,0 +1,34 @@
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+.gallery-section {
+    background: rgb(22,30,45);
+    background: linear-gradient(-60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    min-height: 100vh;
+    padding: 80px 60px 0 60px;
+    min-width: 100%;
+
+}
+
+.row-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.gallery-tag{
+    font-size: 40px;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .gallery-section {
+        padding: 80px 15px;
+    }
+    
+    .gallery-tag{
+        font-size: 30px;
+    }
+  }

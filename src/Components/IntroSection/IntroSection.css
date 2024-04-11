@@ -1,0 +1,25 @@
+.intro-section {
+    background: rgb(22,30,45);
+    background: linear-gradient(45deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    min-height: 60vh;
+    padding: 80px 60px 0 60px;
+    min-width: 100%;
+
+}
+
+.logo-image {
+    width: 450px;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .intro-section {
+        padding: 80px 15px 30px 15px;
+    }
+
+    .logo-image {
+        width: 250px;
+        height: auto;
+    }
+  }
+ 

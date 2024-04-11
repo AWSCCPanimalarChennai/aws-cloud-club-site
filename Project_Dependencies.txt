@@ -1,0 +1,17 @@
+npm install react-router-dom
+
+npm install react-bootstrap 
+
+npm i bootstrap-icons
+
+npm install react-icons
+
+npm install react-confetti
+
+npm i react-image-gallery
+
+npm i react-animated-cursor
+
+npm i react-countup
+
+npm install react-visibility-sensor

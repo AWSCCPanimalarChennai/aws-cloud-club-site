@@ -1,0 +1,44 @@
+.cta-section{
+    background: rgb(22,30,45);
+    background: linear-gradient(60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    padding: 80px 60px 0 60px;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+
+.cta {
+    margin: 0 40px;
+}
+
+.join-btn {
+    background: rgb(51,0,102);
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #3a0247, #410157);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 36px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.join-btn:hover {
+    background: linear-gradient(#410157, #3a0247);
+}
+
+.btn-div{
+    margin-top: 40px;
+}
+
+/* Media query for smartphones */
+@media (max-width: 576px) {
+    .cta-section {
+        padding: 80px 5px 30px 5px;
+    }
+
+    .cta {
+        margin: 0 10px;
+    }
+    
+  }

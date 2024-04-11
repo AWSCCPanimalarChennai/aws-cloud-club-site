@@ -1,0 +1,38 @@
+.stats-card {
+    background-color: rgba(255, 255, 255, 0.12);
+    border: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.stats-title {
+    font-size: 72px;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(#F1F3F3, #7C5AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 0px;
+}
+  
+#stats-text {
+    color: #fff;
+    text-align: justify;
+    font-size: 28px !important;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+}
+
+.stats-row{
+    margin-bottom: 80px;
+}

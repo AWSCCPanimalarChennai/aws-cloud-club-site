@@ -1,0 +1,64 @@
+.join-guide{
+    background: rgb(22,30,45);
+    background: linear-gradient(-60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    min-height: 100vh;
+    padding: 80px 60px;
+    min-width: 100%;
+    
+}
+
+.para-process{
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+
+.process-row {
+    justify-content: center;
+}
+
+.side-head-process{
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif; 
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(#F1F3F3, #7C5AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .process-card{
+    background-color: rgba(255, 255, 255, 0.12);
+    border: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box-shadow for elevation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.more-padding{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+@media (max-width: 576px) {
+    .join-guide{
+        padding: 80px 10px 30px 10px;
+    }
+
+    .process-card{
+        margin: 0 20px;
+        padding: 10px 15px;
+    }
+
+    .more-padding{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }

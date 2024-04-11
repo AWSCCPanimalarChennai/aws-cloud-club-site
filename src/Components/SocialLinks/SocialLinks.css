@@ -1,0 +1,9 @@
+.social-row{
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-row a{
+    width: 60px;
+}

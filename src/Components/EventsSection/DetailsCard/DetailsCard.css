@@ -1,0 +1,39 @@
+.details-card {
+    background-color: rgba(255, 255, 255, 0.12);
+    border: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box-shadow for elevation */
+    z-index: 99;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.card-info {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-indent: 5%;
+}
+
+.view-event-btn {
+    background: rgb(51,0,102);
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #3a0247, #410157);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 36px;
+    width: max-content;
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.view-event-btn:hover {
+    background: linear-gradient(#410157, #3a0247);
+}
+ 

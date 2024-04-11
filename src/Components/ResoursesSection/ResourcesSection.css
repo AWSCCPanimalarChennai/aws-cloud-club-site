@@ -1,0 +1,8 @@
+.gallery-section {
+    background: rgb(22,30,45);
+    background: linear-gradient(-60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    min-height: 100vh;
+    padding: 80px 60px 0 60px;
+    min-width: 100%;
+
+}

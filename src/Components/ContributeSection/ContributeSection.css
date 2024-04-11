@@ -1,0 +1,51 @@
+.contribute-section {
+    background: rgb(22,30,45);
+    background: linear-gradient(60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    padding: 80px 60px 0 60px;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.contribute-card{
+    background-color: rgba(255, 255, 255, 0.12);
+    border: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box-shadow for elevation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    margin: 0 60px;
+}
+
+.contribute-btn {
+    background: rgb(51,0,102);
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #3a0247, #410157);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.contribute-btn:hover {
+    background: linear-gradient(#410157, #3a0247);
+}
+
+
+/* Media query for smartphones */
+@media (max-width: 576px) {
+    .contribute-section {
+        padding: 80px 10px 30px 10px;
+    }
+
+    .contribute-card{
+        margin: 0 20px;
+    }
+  }
+ 

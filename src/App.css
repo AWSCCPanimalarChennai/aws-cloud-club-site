@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Nova+Square&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sarpanch:wght@400;500;600;700;800;900&family=Share+Tech&display=swap');
+
+.footer{
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+    
+}
+
+.section-header {
+  font-family: "Share Tech", sans-serif !important; 
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.side-head{
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif; 
+  font-weight: 600;
+  font-style: normal;
+  background: linear-gradient(#F1F3F3, #7C5AED);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.para{
+  text-align: justify;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #F1F3F3;
+  font-size: 16px;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161E2D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: radial-gradient( #baa9f4, #7C5AED);
+  border-radius: 50px;
+}
+
+
+.gradient-text{
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Raleway", sans-serif; 
+  background: linear-gradient(#F1F3F3, #7C5AED);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

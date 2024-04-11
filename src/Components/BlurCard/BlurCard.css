@@ -1,0 +1,52 @@
+.blur-card {
+    background-color: rgba(255, 255, 255, 0.12);
+    border: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box-shadow for elevation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    width: 100%;
+}
+
+
+
+.card-title{
+    font-size: 44px;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(#F1F3F3, #7C5AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+}
+  
+.card-text{
+    color: #fff;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+
+
+#card-image{
+    height: 200px;
+    width: auto;
+    margin-bottom: 15px;
+    border: none;
+}
+
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

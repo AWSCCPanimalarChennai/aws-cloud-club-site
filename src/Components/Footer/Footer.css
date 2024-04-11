@@ -1,0 +1,96 @@
+.footer{
+    background-color: #232F3E;
+    opacity: 96%;
+    margin: 0 0 0 0;
+    min-width: 100%;
+    padding: 30px 40px;
+    font-family: "Raleway", sans-serif; 
+}
+
+.footer-addr{
+    color: #fff;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    line-height: 28px;
+    font-style: normal;
+    margin-top: 20px; 
+}
+
+.disclaimer{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif; 
+    margin-top: 40px;
+}
+
+.useful-links{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.useful-links:hover{
+    font-weight: 500;
+    transition: ease-in-out;
+    background: linear-gradient(#F1F3F3, #7C5AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.footer-logo{
+    width: auto;
+    height: 200px;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 640px) {
+    .footer-logo{
+        width: 200px ;
+    }
+}
+
+@media (max-width: 992px) {
+    .chennai-identity {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .footer{
+        padding: 30px 20px; 
+    }
+
+    .useful-links-one{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .footer-logo{
+        width: 250px;
+        height: auto;
+    }
+
+    .footer-right {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+
+
+  

@@ -1,0 +1,131 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #161E2D;
+    /* background-image: url("/src/assets/img/hero-bg.png"); */
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 60px;
+    
+    /* background: rgb(22,30,45);
+    background: linear-gradient(-60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%); */
+  }
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 64px;
+    margin-top: 20px;
+    background: linear-gradient(#F1F3F3, #7C5AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.hero-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+
+.hero-content {
+text-align: center;
+font-family: "Raleway", sans-serif;     
+}
+
+.hero-btn {
+    margin-top: 80px;
+    background: rgb(51,0,102);
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #3a0247, #410157);
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 99;
+}
+
+
+.hero-btn:hover {
+    background: linear-gradient(#410157, #3a0247);
+}
+  
+
+.hero-img-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .hero-img {
+    width: 300px; 
+    height: auto; 
+    
+  }
+  
+
+/* Media query for smartphones */
+@media (max-width: 576px) {
+
+  h1 {
+    font-size: 34px;
+}
+
+.hero {
+  padding: 25px 10px;
+  min-height: 100vh;
+  max-width: 100vw;
+ 
+}
+
+.hero-img-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-img {
+  width: 200px;
+  height: auto;
+}
+
+.hero-btn {
+  display: none;
+}
+}
+
+
+/* Media query for tablets */
+@media (max-width: 768px) and (min-width:576px) {
+
+  h1 {
+    font-size: 48px;
+}
+
+.hero {
+  padding: 25px 10px;
+  min-height: 100vh;
+  max-width: 100vw;
+ 
+}
+
+.hero-img-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-img {
+  width: 200px;
+  height: auto;
+}
+
+.hero-btn {
+  display: none;
+}
+}

@@ -1,0 +1,62 @@
+.global-presence-section{
+    background: rgb(22,30,45);
+    background: linear-gradient(-70deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    min-height: 100vh;
+    padding: 80px 60px 0 60px;
+    min-width: 100%;
+}
+
+.counter {
+    top: 27%; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    font-style: normal;
+    font-family: "Nova Square", sans-serif; 
+    background: linear-gradient(#F1F3F3, #7C5AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  } 
+
+  .position-relative {
+    position: relative;
+  }
+  
+  .counters-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+  }
+  
+  .counter-wrapper {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .counter-unit{
+    text-align: center;
+    color: #F1F3F3;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+  }
+  
+
+  @media (max-width: 767px) {
+    .counters-container {
+      position: relative;/* Hide the map in mobile view */
+    }
+
+    .counter {
+        font-size: 40px;
+    }
+
+    #groups, #countries {
+        margin-top: 40px;
+    }
+  }

@@ -1,0 +1,26 @@
+.about-section{
+    background: rgb(22,30,45);
+    background: linear-gradient(60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    min-height: 100vh;
+    padding: 80px 60px 0 60px;
+    
+}
+
+.section-content{
+    color: #fff;
+}
+
+
+/* Media query for smartphones */
+@media (max-width: 576px) {
+    .about-section {
+        padding: 80px 15px 30px 15px;
+    }
+    
+  }
+
+.about-img {
+    width:  100%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
