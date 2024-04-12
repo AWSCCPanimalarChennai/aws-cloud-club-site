@@ -63,7 +63,7 @@ function Footer() {
                         <Col>
                             
                              <h5 className="side-head" style={{marginTop: "15px"}}>Community</h5>
-                            <NavLink to= "https://chat.whatsapp.com/JLQEk3mpP652tcpuD7r6sB" target="_blank" className="useful-links">
+                            <NavLink to= "/join" target="_blank" className="useful-links">
                             <GradientBoxIcon />&nbsp;
                             Join Group</NavLink><br />
                             
