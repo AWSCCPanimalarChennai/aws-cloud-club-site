@@ -1,4 +1,5 @@
 import "./App.css" ;
+import { ParallaxProvider } from 'react-scroll-parallax';
 import "bootstrap/dist/css/bootstrap.min.css" ;
 
 import AnimatedCursor from "react-animated-cursor"
@@ -17,6 +18,7 @@ function App() {
   const isDesktop = window.matchMedia('(min-width: 768px)').matches;
 
   return (
+    <ParallaxProvider>
     <div className="App">
       {isDesktop && (
         <AnimatedCursor
@@ -46,6 +48,7 @@ function App() {
         <Route path = "/join" element = { <Join /> } />
       </Routes>
     </div>
+    </ParallaxProvider>
   ) ;
 }
 

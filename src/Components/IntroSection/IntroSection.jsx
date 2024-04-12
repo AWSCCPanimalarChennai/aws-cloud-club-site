@@ -3,6 +3,8 @@ import React from 'react' ;
 import { Container, Col, Row } from "react-bootstrap" ;
 import Logo from "../../assets/img/logo.png"
 
+import { Parallax } from 'react-scroll-parallax';
+
 import "./IntroSection.css" ;
 
 function IntroSection() {
@@ -23,8 +25,15 @@ function IntroSection() {
               currently in high demand.
             </p>
             </Col>
-            <Col lg={6} style={{ display: "flex", alignItems: "Center", justifyContent: "center" }}>
+            {/* <Col lg={6} style={{ display: "flex", alignItems: "Center", justifyContent: "center" }}>
             <img src={Logo} className='logo-image' alt=""/>
+            </Col> */}
+            
+            
+            <Col lg={6} style={{ display: "flex", alignItems: "Center", justifyContent: "center" }}>
+            <Parallax translateX={['280px', '0px']}>
+              <img src={Logo} className='logo-image' alt=""/>
+              </Parallax> 
             </Col>
         </Row>
     </Container>

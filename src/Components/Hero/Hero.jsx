@@ -32,7 +32,7 @@ function Hero() {
         </Col>
       </Row>
       
-      <Col className="hero-img-container d-flex justify-content-end align-items-end">
+        <Col className="hero-img-container d-flex justify-content-end align-items-end">
           <img src={Chennai} alt="" className="hero-img" />
         </Col>
     </Container>
