@@ -31,7 +31,8 @@ function IntroSection() {
             
             
             <Col lg={6} style={{ display: "flex", alignItems: "Center", justifyContent: "center" }}>
-            <Parallax translateX={['280px', '0px']}>
+            {/* <Parallax translateX={['100px', '0px']}> */}
+            <Parallax scale={[1.3, 1]} >
               <img src={Logo} className='logo-image' alt=""/>
               </Parallax> 
             </Col>

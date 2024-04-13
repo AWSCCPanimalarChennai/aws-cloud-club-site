@@ -41,7 +41,6 @@ h1 {
 .hero-content {
   text-align: center;
   font-family: "Raleway", sans-serif;
-  position: relative; /* Add this line */
 }
 
 .clouds-container {
@@ -55,9 +54,8 @@ h1 {
 
 .cloud-left {
   position: absolute;
-  top: 50px; /* Adjust top position as needed */
-  right: -300px; /* Move the cloud initially outside the viewport */
-  z-index: 999;
+  top: 50px; 
+  right: -300px; 
   height: 700px;
 }
 
@@ -65,9 +63,8 @@ h1 {
   height: 600px;
   width: auto;
   position: absolute;
-  left: -300px; /* Move the cloud initially outside the viewport */
-  top: 100px; /* Adjust top position as needed */
-  z-index: 999;
+  left: -300px; 
+  top: 100px;
 }
 
 
@@ -113,8 +110,6 @@ h1 {
   position: absolute;
   top: 50px;
   left: 0;
-  transform: translateY(-50%); 
-  z-index: 99999;
 }
 
 .cloud-right {
@@ -123,9 +118,8 @@ h1 {
   position: absolute;
   top: 50px;
   right: 10px;
-  transform: translateY(-50%);
-  z-index: 1;
 }
+
 
 
 
