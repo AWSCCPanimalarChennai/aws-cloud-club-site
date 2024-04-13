@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from "react-router-dom" ;
 
 import {Container, Row, Col} from 'react-bootstrap'
@@ -8,9 +8,23 @@ import meetup from '../../assets/img/meetup.png';
 import "./JoinGuide.css"
 
 function JoinGuide() {
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Container className='join-guide'>
-        <SectionHeader header="Joining Process" />
+        <SectionHeader header="Joining Process"  scrollPosition={scrollPosition} />
         <Row className='process-row'>
             <h1>Step - 1</h1>
             <p className='para-process'>

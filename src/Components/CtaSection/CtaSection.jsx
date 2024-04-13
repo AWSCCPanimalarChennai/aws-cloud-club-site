@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 import { Link } from "react-router-dom" ;
@@ -7,9 +7,23 @@ import "./CtaSection.css"
 import SectionHeader from '../SectionHeader/SectionHeader';
 
 function CtaSection() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Container className='cta-section'>
-        <SectionHeader header="Join Us" />
+        <SectionHeader header="Join Us"  scrollPosition={scrollPosition} />
         <Row className='cta'>
             <Col sm={12} className="cta-col">
                 <h1>We are Open!</h1>

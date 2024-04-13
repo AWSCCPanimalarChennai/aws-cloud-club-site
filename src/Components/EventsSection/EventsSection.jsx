@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Lottie from "lottie-react"
 
@@ -11,10 +11,23 @@ import inaugurationPoster from '../../assets/img/inauguration.jpg'
 import noEvents from '../../assets/animation/noEvents.json'
 
 function EventsSection() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <Container className='events-section'>
       
-      <SectionHeader header="Upcoming Events" />
+      <SectionHeader header="Upcoming Events"   scrollPosition={scrollPosition}/>
       <Row className='row-gallery'>
             <Col sm={4}>
             <Lottie animationData={noEvents}></Lottie>

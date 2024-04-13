@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 import "./StatsSection.css"
@@ -6,9 +6,23 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 import StatsCard from '../StatsCard/StatsCard';
 
 function StatsSection() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Container className='stats-section' >
-        <SectionHeader header="Community" />
+        <SectionHeader header="Community"  scrollPosition={scrollPosition} />
         <Row className='stats-row'>
             <Col lg={3}>
             <StatsCard title="239" text="Members"/>
