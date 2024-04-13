@@ -4,6 +4,7 @@
     margin: 0 0 0 0;
     min-width: 100%;
     padding: 30px 40px;
+    padding-bottom: 10px;
     font-family: "Raleway", sans-serif; 
 }
 
@@ -23,7 +24,7 @@
     justify-content: center;
     align-items: center;
     font-family: "Raleway", sans-serif; 
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .useful-links{
@@ -44,6 +45,7 @@
 .footer-logo{
     width: auto;
     height: 200px;
+    margin-right: 30px;
 }
 
 .img-container{
@@ -93,4 +95,11 @@
   }
 
 
-  
+small {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer-link{
+    text-decoration: none;
+}
