@@ -134,15 +134,18 @@ function Footer() {
                 </Col>
 
                 <Col lg={4} className="footer-right">
-                    
+                    <div className="center">
                     <img className="footer-logo" src={AWSCloudClubLogo} alt="AWSCloudClubLogo" />
-                
+                    </div>
                     <p className="disclaimer">
                         <i>
                             <sub> This website is managed by <b>AWS Cloud Club Panimalar - Chennai</b> and is independent of any affiliation with Amazon Web Services, Inc.
                             Opinions expressed within the content are solely those of the respective contributors, and do not necessarily reflect the official positions or views of Amazon Web Services, Inc.
                             </sub>
-                        </i>
+                            </i>
+                        <br />
+                        <small style={{textAlign: "center"}}>Designed and Developed by <NavLink className="footer-link gradient-text" to='https://www.linkedin.com/in/jeswinjosephj/'>Jeswin Joseph J</NavLink> and <NavLink className="footer-link gradient-text"  to="https://www.linkedin.com/in/hrishab59/">Rishab H</NavLink>.<br />  For source Code visit Github</small>
+                    
                     </p>
                     
                 </Col>
