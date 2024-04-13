@@ -10,6 +10,20 @@ import inauguration2 from '../../assets/img/events/inauguration2.jpg';
 import inauguration3 from '../../assets/img/events/inauguration4.jpg';
 
 function GallerySection() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const images = [
     {
       original: inauguration1,
@@ -44,7 +58,7 @@ function GallerySection() {
 
   return (
     <Container className='gallery-section'>
-      <SectionHeader header="Moments" />
+      <SectionHeader header="Moments"  scrollPosition={scrollPosition} />
       <Row className='row-gallery'>
         <Col lg={12}>
         <ImageGallery

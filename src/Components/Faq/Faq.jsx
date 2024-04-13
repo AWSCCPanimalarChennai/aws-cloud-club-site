@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import AccordionItem from './AccordionItem/AccordionItem';
 import { Col, Container, Row } from 'react-bootstrap';
 import SectionHeader from '../SectionHeader/SectionHeader';
@@ -6,9 +6,22 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 import './Faq.css'
 
 function Faq() {
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <Container className='faq-section'>
-        <SectionHeader header="Faq"></SectionHeader>
+        <SectionHeader header="Faq"  scrollPosition={scrollPosition} />
         <Row>
             <Col lg={12}>
                 <AccordionItem

@@ -10,6 +10,7 @@ import IntroSection from "../Components/IntroSection/IntroSection";
 import Loader from "../Components/Loader/Loader";
 
 function Home() {
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

@@ -1,18 +1,32 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax, useParallax } from 'react-scroll-parallax';
+import { useMediaQuery } from 'react-responsive';
 import "./SectionHeader.css";
 
 function SectionHeader(props) {
+  const parallax = useParallax({
+    onProgressChange: (progress) => {
+      if (parallax.ref.current) {
+        // set progress to CSS variable
+        parallax.ref.current.style.setProperty(
+          "--progress",
+          progress.toString()
+        );
+      }
+    },
+  });
+
   return (
     <div className="section-header">
-    <Parallax translateY={["-90", "90"]} style={{ fontFamily: "Share Tech" }}>
-      <span>{props.header}</span>
-    </Parallax>
-    <Parallax translateY={["-60", "60"]} style={{ fontFamily: "Share Tech" }}>
-      <h2>{props.header}</h2>
-    </Parallax>
-  </div>
-  
+    <h2
+      ref={parallax.ref}
+      className="text-stroke"
+      // use the progress variable to change the width of the stroke as progress updates
+      style={{ letterSpacing: `calc(20px * var(--progress))` }}
+    >
+      {props.header}
+    </h2>
+    </div>
   );
 }
 

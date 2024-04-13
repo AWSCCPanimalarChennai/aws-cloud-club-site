@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import "../../App.css"
 
@@ -12,10 +12,24 @@ import Col from 'react-bootstrap/Col';
 import team from '../../assets/img/team1.jpg'; 
 
 function About() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Container id='About' fluid className='about-section'>
         
-      <SectionHeader header = "About Us"/>
+      <SectionHeader header = "About Us"  scrollPosition={scrollPosition}/>
       <Row className="section-row">
         <Col lg={6} className="section-content">
             <h2 className='side-head'>Who we are?</h2>

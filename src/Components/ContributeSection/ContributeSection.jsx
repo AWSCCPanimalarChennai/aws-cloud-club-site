@@ -1,4 +1,4 @@
-import React from 'react' ;
+import React, { useEffect, useState } from 'react' ;
 import { Col, Container, Row } from 'react-bootstrap';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
@@ -7,9 +7,23 @@ import { NavLink } from "react-router-dom" ;
 import "./ContributeSection.css"
 
 function ContributeSection() {
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
     return (
+        
         <Container className='contribute-section'>
-            <SectionHeader header="Contribute" />
+            <SectionHeader header="Contribute"  scrollPosition={scrollPosition} />
             <Row className='contribute-card'>
                 <Col lg={8}>
                     <h1>Host an Event</h1>

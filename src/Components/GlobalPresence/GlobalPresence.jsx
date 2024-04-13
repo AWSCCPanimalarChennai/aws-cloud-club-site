@@ -6,6 +6,21 @@ import map from "../../assets/img/hero-bg.png";
 import SectionHeader from '../SectionHeader/SectionHeader';
 
 function GlobalPresence() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   const [isVisible, setIsVisible] = useState(false);
   const counterRef = useRef(null);
 
@@ -60,7 +75,7 @@ function GlobalPresence() {
 
   return (
     <Container className='global-presence-section'>
-      <SectionHeader header="Global Presence" />
+      <SectionHeader header="Global Presence"  scrollPosition={scrollPosition} />
       <Row>
         <Col lg={12} className="position-relative">
           <Row className="counters-container">

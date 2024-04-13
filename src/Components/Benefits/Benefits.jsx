@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Benefits.css"
 
 import Row from "react-bootstrap/Row"
@@ -15,10 +15,23 @@ import Guidance from "../../assets/img/IndustryGuidance.svg"
 
 
 function Benefits() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(()=> {
+    const handleScroll = () => {
+      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <Container id='Activities' fluid className='benefits-section'>
         
-      <SectionHeader header = "Opportunities"/>
+      <SectionHeader header = "Opportunities"  scrollPosition={scrollPosition}/>
 
       <Row className="benefits-row">
         
