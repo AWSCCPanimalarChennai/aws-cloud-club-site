@@ -7,13 +7,13 @@
     left: 0;
     width: 100%;
     background-color: rgba(35, 47, 62, 0.50);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    z-index: 9999;
+    z-index: 9;
 }
 
 
@@ -69,6 +69,7 @@
 
 .hamburger{
     display: none ;
+    z-index: 999;
 }
 
 
