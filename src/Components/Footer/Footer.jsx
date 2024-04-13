@@ -144,7 +144,7 @@ function Footer() {
                             </sub>
                             </i>
                         <br />
-                        <small style={{textAlign: "center"}}>Designed and Developed by <NavLink className="footer-link gradient-text" to='https://www.linkedin.com/in/jeswinjosephj/'>Jeswin Joseph J</NavLink> and <NavLink className="footer-link gradient-text"  to="https://www.linkedin.com/in/hrishab59/">Rishab H</NavLink>.<br />  For source Code visit Github</small>
+                        <small style={{textAlign: "center"}}>Designed &amp; Developed by <NavLink className="footer-link gradient-text" target="_blank" to='https://www.linkedin.com/in/jeswinjosephj/'>Jeswin Joseph J</NavLink> and <NavLink className="footer-link gradient-text" target="_blank"  to="https://www.linkedin.com/in/hrishab59/">Rishab H</NavLink><br />  For source Code visit Github</small>
                     
                     </p>
                     

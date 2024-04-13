@@ -11,9 +11,9 @@ function TeamCard(props) {
       <Card.Body className='team-card-body'>
         <h1 className='quote'>&ldquo;</h1>
 
-        <Card.Text className='quote-text'>
+        <p className='quote-text'>
           <i dangerouslySetInnerHTML={{ __html: props.quote }} />
-        </Card.Text>
+        </p>
         
         <img src={props.image} alt={props.title} className="card-image" />
         <Card.Title className='team-card-title'>{props.title}</Card.Title>
