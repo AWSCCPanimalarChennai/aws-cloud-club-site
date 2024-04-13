@@ -54,7 +54,7 @@ function TeamSection() {
             connect="https://www.linkedin.com/in/porselvan-p-459596232/"/>
         </Col>
 
-        <Col lg="3" className='left-member' >
+        <Col lg="3" className='right-member' >
             <TeamCard quote="Just keep on increasing your FullStack. At one point, you will Reach the Cloud" 
             image={Rishab} 
             title="Rishab H" 
