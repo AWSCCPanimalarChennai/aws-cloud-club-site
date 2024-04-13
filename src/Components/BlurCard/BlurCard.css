@@ -16,7 +16,7 @@
 
 
 .card-title{
-    font-size: 44px;
+    font-size: 32px;
     font-weight: 600;
     font-style: normal;
     background: linear-gradient(#F1F3F3, #7C5AED);
@@ -38,7 +38,7 @@
 
 
 #card-image{
-    height: 200px;
+    height: 180px;
     width: auto;
     margin-bottom: 15px;
     border: none;

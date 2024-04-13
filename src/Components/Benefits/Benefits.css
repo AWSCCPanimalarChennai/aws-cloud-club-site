@@ -6,7 +6,6 @@
 .benefits{
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
 
 .second-row{

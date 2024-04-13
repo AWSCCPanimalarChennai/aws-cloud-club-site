@@ -5,8 +5,12 @@
     /* background-image: url("/src/assets/img/hero-bg.png"); */
     background-size:cover;
     background-position: center;
-    position: relative;
     color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 60px;
     
     /* background: rgb(22,30,45);
@@ -35,9 +39,38 @@ h1 {
   
 
 .hero-content {
-text-align: center;
-font-family: "Raleway", sans-serif;     
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: relative; /* Add this line */
 }
+
+.clouds-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.cloud-left {
+  position: absolute;
+  top: 50px; /* Adjust top position as needed */
+  right: -300px; /* Move the cloud initially outside the viewport */
+  z-index: 999;
+  height: 700px;
+}
+
+.cloud-right {
+  height: 600px;
+  width: auto;
+  position: absolute;
+  left: -300px; /* Move the cloud initially outside the viewport */
+  top: 100px; /* Adjust top position as needed */
+  z-index: 999;
+}
+
+
 
 .hero-btn {
     margin-top: 80px;
@@ -75,6 +108,26 @@ font-family: "Raleway", sans-serif;
   h1 {
     font-size: 34px;
 }
+
+.cloud-left {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  transform: translateY(-50%); 
+  z-index: 99999;
+}
+
+.cloud-right {
+  width: 700px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+
 
 .hero {
   padding: 25px 10px;

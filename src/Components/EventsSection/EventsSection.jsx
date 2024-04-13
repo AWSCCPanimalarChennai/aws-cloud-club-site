@@ -33,7 +33,7 @@ function EventsSection() {
             <Lottie animationData={noEvents}></Lottie>
             </Col>
             
-            <h1 className='noEvents-tag'>Hmm... Nothing for now.</h1>
+            <h2 className='center gradient-text'>Hmm... Nothing for now.</h2>
         </Row>
 
       <SectionHeader header="Past Events" />
