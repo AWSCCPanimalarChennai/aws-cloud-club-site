@@ -18,7 +18,6 @@ function SectionHeader(props) {
     <div className="section-header">
     <h2
       ref={parallax.ref}
-      className="text-stroke"
       style={{ letterSpacing: `calc(20px * var(--progress))` }}
     >
       {props.header}
