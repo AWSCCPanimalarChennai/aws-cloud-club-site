@@ -27,10 +27,11 @@ function Benefits() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
   return (
     <Container id='Activities' fluid className='benefits-section'>
         
-      <SectionHeader header = "Opportunities"  scrollPosition={scrollPosition}/>
+      <SectionHeader header = "Prospects"  scrollPosition={scrollPosition}/>
 
       <Row className="benefits-row">
         

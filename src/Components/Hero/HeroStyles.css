@@ -41,7 +41,6 @@ h1 {
 .hero-content {
   text-align: center;
   font-family: "Raleway", sans-serif;
-  position: relative; /* Add this line */
 }
 
 .clouds-container {

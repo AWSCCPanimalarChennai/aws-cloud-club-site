@@ -5,11 +5,11 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 
 import "./TeamSection.css"
 
-import Jeswin from "../../assets/img/jeswin.jpg"
+import Jeswin from "../../assets/img/jeswin1.jpg"
 import Porselvan from "../../assets/img/porselvan.jpg"
-import Sakkthivel from "../../assets/img/sakkthi.jpg"
-import Madhav from "../../assets/img/madhav.jpeg"
-import Rishab from "../../assets/img/rishab.jpg"
+import Sakkthivel from "../../assets/img/sakkthivel.jpg"
+import Madhav from "../../assets/img/madhav1.jpg"
+import Rishab from "../../assets/img/rishab2.jpg"
 import TeamCard from '../TeamCard/TeamCard';
 
 function TeamSection() {
