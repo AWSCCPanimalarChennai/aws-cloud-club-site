@@ -35,23 +35,19 @@ function Benefits() {
 
       <Row className="benefits-row">
         
-      <Col lg={6}  className="benefits">
+      <Col lg={3}  className="benefits">
           <BlurCard title="AWS Certifications" image={Certification} />
         </Col>
         
-        <Col lg={6} className="benefits right-item">
+        <Col lg={3} className="benefits right-item">
           <BlurCard title="Cloud Projects" image={Projects} />
         </Col>
         
-      </Row>
-
-      <Row className='second-row benefits-row'>
-        
-      <Col md={6} className="benefits">
+      <Col md={3} className="benefits">
           <BlurCard title="Global Collaboration" image={Collaboration}  />
         </Col>
 
-        <Col md={6} className="benefits right-item">
+        <Col md={3} className="benefits right-item">
           <BlurCard title="Industry Guidance" image={Guidance} />
         </Col>
       </Row>
