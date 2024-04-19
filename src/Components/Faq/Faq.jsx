@@ -33,7 +33,7 @@ function Faq() {
                 <AccordionItem
                     eventKey="1"
                     question="2. I encountered a social registration error on Meetup.com. What steps should I take to resolve it?"
-                    answer= "When facing a social registration error, simply choose the location option 'CHENNAI-IN' again instead of 'CHENNAI-IN'. This should resolve the issue."
+                    answer= "While it's showing a social registration error, just re-select the location to CHENNAI-IN from CHENNAI-IN again. This should resolve the issue"
                 />
 
                 <AccordionItem

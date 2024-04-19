@@ -47,6 +47,10 @@
     padding-right: 80px;
 }
 
+.note {
+    padding: 20px;
+}
+
 @media (max-width: 576px) {
     .join-guide{
         padding: 80px 10px 30px 10px;
