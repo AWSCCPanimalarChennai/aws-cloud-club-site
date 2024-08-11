@@ -1,3 +1,16 @@
+//------------------------------------------------------------------------------
+
+/**
+ * Benefits.jsx
+ * Description: Component for rendering about section in About Route.
+ * Author: Jeswin Joseph J
+ * Created: March 2024
+ * License: MIT
+ */
+
+//------------------------------------------------------------------------------
+
+
 import React, { useEffect, useState } from 'react'
 import "./Benefits.css"
 
@@ -6,7 +19,7 @@ import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 
 import SectionHeader from '../SectionHeader/SectionHeader'
-import BlurCard from '../BlurCard/BlurCard'
+import BlurCard from './BlurCard/BlurCard'
 
 import Certification from "../../assets/img/Certification.svg"
 import Projects from "../../assets/img/cloudProjects.svg"
