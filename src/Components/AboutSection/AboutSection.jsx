@@ -19,7 +19,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import team from '../../assets/img/team1.jpg'; 
+import team from '../../assets/img/team/team1.jpg'; 
 
 function About() {
   const [scrollPosition, setScrollPosition] = useState(0);
