@@ -12,6 +12,7 @@ import Resources from "./Routes/Resources" ;
 import Gallery from "./Routes/Gallery" ;
 import About from "./Routes/About";
 import Join from "./Routes/Join";
+import Meetup3 from "./Routes/Meetup3";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Route path = "/resources" element = { <Resources /> } />
         <Route path = "/gallery" element = { <Gallery /> } />
         <Route path = "/join" element = { <Join /> } />
+        <Route path = "/meetup3" element = { <Meetup3 /> } />
       </Routes>
     </div>
     </ParallaxProvider>
