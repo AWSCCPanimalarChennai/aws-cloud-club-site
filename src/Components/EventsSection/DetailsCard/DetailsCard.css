@@ -7,7 +7,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box-shadow for elevation */
     z-index: 99;
     width: 100%;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 
