@@ -29,7 +29,7 @@ function StatsSection() {
             <StatsCard title="239" text="Members"/>
             </Col>
             <Col lg={3} id='second-card'>
-            <StatsCard title="1" text="Events"/>
+            <StatsCard title="6" text="Events"/>
             </Col>
             <Col lg={3} id="third-card">
             <StatsCard title="&infin;" text="Opportunities" />

@@ -4,10 +4,7 @@ import ImageGallery from "react-image-gallery";
 
 import "./GallerySection.css";
 import SectionHeader from '../SectionHeader/SectionHeader';
-
-import inauguration1 from '../../assets/img/events/inauguration1.jpg';
-import inauguration2 from '../../assets/img/events/inauguration2.jpg';
-import inauguration3 from '../../assets/img/events/inauguration4.jpg';
+import { imageUrl } from '../../data/urls';
 
 function GallerySection() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -24,20 +21,10 @@ function GallerySection() {
     };
   }, []);
 
-  const images = [
-    {
-      original: inauguration1,
-      thumbnail: inauguration1,
-    },
-    {
-      original: inauguration2,
-      thumbnail: inauguration2,
-    },
-    {
-      original: inauguration3,
-      thumbnail: inauguration3,
-    },
-  ];
+  const images = imageUrl.map((image) => ({
+    original: image.src,
+    thumbnail: image.src
+  }));
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -61,15 +48,15 @@ function GallerySection() {
       <SectionHeader header="Moments"  scrollPosition={scrollPosition} />
       <Row className='row-gallery'>
         <Col lg={12}>
-        <ImageGallery
-          items={images}
-          showNav={false}
-          thumbnailPosition={thumbnailPosition}
-          showIndex={true}
-          autoPlay={true}
-          showPlayButton={false}
-          showFullscreenButton={false}
-        />
+              <ImageGallery
+                items={images}
+                showNav={false}
+                thumbnailPosition={thumbnailPosition}
+                showIndex={true}
+                autoPlay={true}
+                showPlayButton={false}
+                showFullscreenButton={false}
+              />
         </Col>
       </Row>
     </Container>
