@@ -29,4 +29,13 @@ export const imageUrl = [
     {
         src: require("../assets/img/events/meetup7.jpg"),
     },
+    {
+        src: require("../assets/img/events/meetup8.jpeg"),
+    },
+    {
+        src: require("../assets/img/events/meetup9.jpg"),
+    },
+    {
+        src: require("../assets/img/events/meetup10.jpeg"),
+    },
 ];
