@@ -26,7 +26,7 @@ function StatsSection() {
         <SectionHeader header="Community"  scrollPosition={scrollPosition} />
         <Row className='stats-row'>
             <Col lg={3}>
-            <StatsCard title="239" text="Members"/>
+            <StatsCard title="1350+" text="Members"/>
             </Col>
             <Col lg={3} id='second-card'>
             <StatsCard title="6" text="Events"/>
