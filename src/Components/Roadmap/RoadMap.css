@@ -5,3 +5,14 @@
     min-width: 100%;
     min-height: 100vh;
 }
+
+
+.roadmap-title{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.week-title{
+    margin: 40px 0;
+    text-align: center;
+}
