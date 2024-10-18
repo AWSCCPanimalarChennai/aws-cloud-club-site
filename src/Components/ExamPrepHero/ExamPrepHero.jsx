@@ -9,7 +9,7 @@ function ExamPrepHero() {
     <Row className="hero-row">
       <Col lg={12} className="hero-content">
         <img src={badge} alt="" className="hero-img" />
-        <h1 className='mt-5'>Get Certified Challenge</h1>
+        <h1 className='mt-5'>30-Days Practitioner Challenge</h1>
         <h4>AWS Certified Cloud Practitioner in <span className='gradient-text'>30 days</span>!</h4>
       </Col>
     </Row>
