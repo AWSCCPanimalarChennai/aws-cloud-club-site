@@ -33,11 +33,11 @@ function NavBar() {
                         Events
                     </Link>
                 </li>
-                {/* <li>
-                    <Link to = "/resources" >
-                        Resources
+                <li>
+                    <Link to = "/examPrep" >
+                        Get Certified
                     </Link>
-                </li> */}
+                </li>
                 <li>
                     <Link to = "/gallery" className = "navbar-menu-last-element" >
                         Gallery
