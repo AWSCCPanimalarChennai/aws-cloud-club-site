@@ -50,7 +50,7 @@ export const examPrep = [
     },
     {
         week: "Week - 4",
-        title: "SkillBuilder: Cloud Practitioner Essentials",
+        title: "AGAIN: SkillBuilder: Cloud Practitioner Essentials",
         para: "Watch the Cloud Practitioner Essentials course again from the beginning, but this time at 2x speed, just to refresh the key concepts and ensure a quicker review of the material.",
         url : "https://explore.skillbuilder.aws/learn/lp/82/cloud-essentials-knowledge-badge-readiness-path",
         btnText : "Revise Course", 
