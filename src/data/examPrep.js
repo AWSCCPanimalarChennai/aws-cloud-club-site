@@ -4,7 +4,7 @@ export const examPrep = [
         title: "Cloud Computing Basics",
         para: "Learn the basics of cloud computing concepts such as IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service), as well as virtualization technology, from YouTube tutorials.",
         url : "https://www.youtube.com/",
-        btnText : "Get Started", 
+        btnText : "Open YouTube", 
     },
     {
         week: "",
@@ -50,7 +50,7 @@ export const examPrep = [
     },
     {
         week: "Week - 4",
-        title: "AGAIN: SkillBuilder: Cloud Practitioner Essentials",
+        title: "RECAP: SkillBuilder: Cloud Practitioner Essentials",
         para: "Watch the Cloud Practitioner Essentials course again from the beginning, but this time at 2x speed, just to refresh the key concepts and ensure a quicker review of the material.",
         url : "https://explore.skillbuilder.aws/learn/lp/82/cloud-essentials-knowledge-badge-readiness-path",
         btnText : "Revise Course", 

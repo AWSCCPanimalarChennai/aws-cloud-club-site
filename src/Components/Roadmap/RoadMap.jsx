@@ -11,54 +11,47 @@ function RoadMap() {
 
     useEffect(() => {
         const handleScroll = () => {
-        const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
-        setScrollPosition(position);
+            const position = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            setScrollPosition(position);
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => {
-        window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-  return (
-    <Container className='contribute-section'>
-            <SectionHeader header="Action Plan"  scrollPosition={scrollPosition} />
+    return (
+        <Container className='contribute-section'>
+            <SectionHeader header="Action Plan" scrollPosition={scrollPosition} />
             
-            {
-                examPrep.map((ele, index) => {
-                    return (
-                        <>
+            {examPrep.map((ele, index) => (
+                <Fragment key={index}>
+                    <h1 className='week-title'>{ele.week}</h1>
+                    <Row className='contribute-card'>
+                        <Col lg={8}>
+                            <h1 className='roadmap-title'>{ele.title}</h1>
+                            <p className='para'>{ele.para}</p>
+                        </Col>
                         
-                        <h1 className='week-title'>{ele.week}</h1>
-                            <Row className = 'contribute-card' key={index}>
-                                <Col lg={8}>
-                                    <h1 className = 'roadmap-title'>{ele.title}</h1>
-                                    <p className='para'>
-                                        {ele.para}
-                                    </p>
-                                </Col>
-                                
-                                <Col lg={4} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
-                                    <NavLink to={ele.url} className='contribute-btn'>
-                                        <span>
-                                            {ele.btnText}
-                                            &nbsp;
-                                        </span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                        </svg>
-                                    </NavLink>
-                                </Col>
-                            </Row>
-                            <br />
-                        </>
-
-                    );
-                })
-            }
+                        <Col lg={4} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            {ele.btnText !== "" && (
+                                <NavLink to={ele.url} className='contribute-btn' target='_blank'>
+                                    <span>
+                                        {ele.btnText}&nbsp;
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                    </svg>
+                                </NavLink>
+                            )}
+                        </Col>
+                    </Row>
+                    <br />
+                </Fragment>
+            ))}
         </Container>
-  )
+    );
 }
 
 export default RoadMap;
